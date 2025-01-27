@@ -22,7 +22,7 @@ export function Home() {
             transition={{ duration: 0.6 }}
           >
             <motion.h1 
-              className="text-5xl md:text-7xl font-bold mb-4 p-6"  // Added p-6 here for 25px padding
+              className="text-5xl md:text-7xl font-bold mb-4 p-8 mt-8"  // Added p-8 for 30px padding and mt-8 to move text lower
               initial={{ opacity: 0, y: 20 }} 
               animate={{ opacity: 1, y: 0 }} 
               transition={{ delay: 0.2 }}
@@ -39,7 +39,7 @@ export function Home() {
               />
             </motion.h1>
             <motion.p 
-              className={`text-xl md:text-2xl mb-8 p-6 ${  // Added p-6 here for 25px padding
+              className={`text-xl md:text-2xl mb-8 p-6 ${  // Added p-6 for padding to the about text
                 theme === 'dark' ? 'text-gray-300' : 'text-gray-700'
               }`}
               initial={{ opacity: 0, y: 20 }} 
